@@ -1,0 +1,50 @@
+<resources xmlns:android="http://schemas.android.com/tools">
+    <string name="app_name">TikSave</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_saves">Downloads</string>
+
+
+    <string name="header">Tap to stop service</string>
+    <string name="fini">Download Complete</string>
+
+    <string name="open">Open Tik Tok</string>
+
+    <string name="message">Just open tik tok app and click copy link to download video</string>
+    <string name="empty">No downloads yet</string>
+    <string name="gas_toolbar">My Downloads</string>
+    <string name="heading">Tap to stop service/ quit app</string>
+
+    <string name="btn_play">Play Video</string>
+
+
+    <string name="cave_label">Download Started</string>
+    <string name="cave_title_holder">♫ Oliver Heldens - Space Sheep</string>
+    <string name="empty_text">No downloads yet</string>
+
+
+
+    <string name="headings">TikTok Downloader is on</string>
+    <string name="sub_headings">Copy TikTok link to download video</string>
+    <string name="none">No Saved Videos</string>
+
+    <string name="savers">DOWNLOADS</string>
+
+
+
+    <string name="menu_save">Downloads</string>
+    <string name="menu_rate">Rate App</string>
+
+    <string name="btn_open">Open Tiktok</string>
+    <string name="placeholder">Download videos from TikTok \nFeel free to skip the ads :)</string>
+
+    <string name="my">Downloads</string>
+    <string name="saving">Downloading TikTok</string>
+
+
+    //Matt
+    <string name="twitter">Updates via Twitter</string>
+    <string name="remove_ads">Remove Ads/Restore Purchases</string>
+
+
+
+</resources>

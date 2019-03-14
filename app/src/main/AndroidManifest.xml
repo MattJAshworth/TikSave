@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="xyz.mattjashworth.tiksave">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_tik_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".MainActivity"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="@string/permissions_loader_meta_key"
+                android:value="android.permission.WRITE_EXTERNAL_STORAGE" />
+        </activity>
+        <activity android:name=".Megaris"
+            android:theme="@style/Theme.AppCompat.Translucent"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+
+            <meta-data
+                android:name="@string/permissions_loader_meta_key"
+                android:value="android.permission.WRITE_EXTERNAL_STORAGE" />
+        </activity>
+
+
+        <receiver android:name=".OnBoot">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+
+        <service
+            android:name=".toolbox.TokService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".Downloaded"
+            android:screenOrientation="portrait">
+
+            <meta-data
+                android:name="@string/permissions_loader_meta_key"
+                android:value="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-7439808203904930~6858140011" />
+
+    </application>
+
+</manifest>
