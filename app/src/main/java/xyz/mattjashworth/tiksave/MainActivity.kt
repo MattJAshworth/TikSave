@@ -44,7 +44,7 @@ class MainActivity : AppCompatActivity(), RewardedVideoAdListener, KinAppManager
 
 
         //Ads
-        MobileAds.initialize(this, "ca-app-pub-7439808203904930~6858140011")
+        MobileAds.initialize(this, "ADMOB_ID_HERE")
         mRewardedVideoAd = MobileAds.getRewardedVideoAdInstance(this)
         mRewardedVideoAd.rewardedVideoAdListener = this
         loadRewardedVideoAd()
@@ -120,7 +120,7 @@ class MainActivity : AppCompatActivity(), RewardedVideoAdListener, KinAppManager
     }
 
     private fun loadRewardedVideoAd() {
-        mRewardedVideoAd.loadAd("ca-app-pub-7439808203904930/4920605333",
+        mRewardedVideoAd.loadAd("ADMOB_ID_HERE",
                 AdRequest.Builder().build())
     }
 
